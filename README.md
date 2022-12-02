@@ -126,7 +126,6 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
                 SELINUX=disabled
      8. reboot
      9. sudo systemctl start mysqld
-         
-                    
+## Install                     
                     
 
