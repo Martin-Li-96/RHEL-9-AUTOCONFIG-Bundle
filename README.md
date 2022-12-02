@@ -126,6 +126,33 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
                 SELINUX=disabled
      8. reboot
      9. sudo systemctl start mysqld
-## Install                     
+## Install PostgreSQL
+    1. sudo dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-9-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+    2. sudo dnf -qy module disable postgresql
+    3. sudo dnf install -y postgresql15-server
+    4. sudo /usr/pgsql-15/bin/postgresql-15-setup initdb
+    5. sudo systemctl enable postgresql-15
+    6. sudo systemctl start postgresql-15
+    **(Change database directory)**
+    video https://www.youtube.com/watch?v=CQh10DTR8d8
+            - mkdir /postgres
+            - cp -Rp /var/lib/pgsql/15/data /postgres
+            - chown -R postgres:postgres /postgres
+            - chmod -R 750 /postgres
+            gedit /var/lib/pgsql/15/data/postgresql.conf
+                  - data_directory = '/postgres/data'
+    # Run postgresql
+            sudo -u postgres psql
+   # Change Postgresql
+            sudo -u postgres psql
+            ALTER USER postgres PASSWORD 'myPassword';
+            show SHOW hba_file;
+            gedit /var/lib/pgsql/15/data/pg_hba.conf
+            peer -> md5
+         # Run postgres by:
+            psql -U postgres -W  
+            
+      
+
                     
 
