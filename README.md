@@ -143,7 +143,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
                   - data_directory = '/postgres/data'
     # Run postgresql
             sudo -u postgres psql
-   # Change Postgresql
+   ### Change Postgresql
             sudo -u postgres psql
             ALTER USER postgres PASSWORD 'myPassword';
             show SHOW hba_file;
