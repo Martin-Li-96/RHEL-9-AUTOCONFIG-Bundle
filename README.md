@@ -24,6 +24,12 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
 **(Recommand using  Tar File Installation)**
 ## Install Node.js
 [link](https://github.com/nodesource/distributions) useing RHEL 8 source.
+## Install FFMPEG
+    1.enable RPMfusion
+            - sudo rpm -ivh https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-9.noarch.rpm
+            - sudo rpm -ivh https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-9.noarch.rpm
+    2. Install ffmpeg ffmpeg-devel
+            - sudo yum install ffmpeg ffmpeg-devel -y
 ## Install Oracle JDK
     1. Uninstall the origin JDK
              process=`rpm -qa | grep java`
@@ -82,5 +88,26 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     export PATH=$PATH:/usr/local/bin
 ## Install LaTex (Texlive)
     sudo yum install texlive* -y
-## 
+## Install Spark
+    1. Download Apache-Spark (https://spark.apache.org/downloads.html)
+    2. tar -zvxf ./spark*.tgz
+    3. sudo mv ./spark-*hadoop3 /opt/spark
+    4. gedit /etc/profile
+        export PATH=$PATH:/opt/spark/bin
+## Install flatpack and flathub
+    1. sudo yum install flatpak
+    2. sudo flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
+## Install clojure
+    1. curl -O https://download.clojure.org/install/linux-install-1.11.1.1200.sh
+    2. sudo sh ./linux-install*.sh
+## Install mysql
+    1. Download mysql community server 
+        https://dev.mysql.com/downloads/file/?id=511985
+    2. sudo rpm -ivh mysql80-community-release-el9-1.noarch.rpm
+    3. sudo yum install mysql-server
+    4. systemctl start mysqld
+    5. sudo cat /var/log/mysqld.log | grep password (get the temp passwd)
+    6. mysql_secure_installation (choose yes) and reset the root password
+    **(Change the directory of database)**
+            - 
 
