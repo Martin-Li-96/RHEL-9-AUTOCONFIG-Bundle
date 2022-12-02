@@ -105,9 +105,28 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
         https://dev.mysql.com/downloads/file/?id=511985
     2. sudo rpm -ivh mysql80-community-release-el9-1.noarch.rpm
     3. sudo yum install mysql-server
-    4. systemctl start mysqld
+    4. sudo systemctl start mysqld
     5. sudo cat /var/log/mysqld.log | grep password (get the temp passwd)
     6. mysql_secure_installation (choose yes) and reset the root password
     **(Change the directory of database)**
-            - 
+            - sudo systemctl stop mysqld
+            - sudo mkdir /data
+            - chown -R mysql:mysql /data
+            - sudo cp -Rp /var/lib/mysql/* /data
+            - sudo cp /etc/my.cnf /etc/my.cnf.bak
+            - sudo gedit /etc/my.cnf\
+                    [mysqld]          
+                    datadir=/data/mysql
+                    socket=/data/mysql/mysql.sock
+                    [client]:
+                    port=3306
+                    socket=/data/mysql/mysql.sock
+     7. disable SELinux
+        sudo gedit /etc/selinux/config
+                SELINUX=disabled
+     8. reboot
+     9. sudo systemctl start mysqld
+         
+                    
+                    
 
