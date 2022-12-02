@@ -22,8 +22,20 @@
 ## Install CUDNN
 Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)\
 **(Recommand using  Tar File Installation)**
-
-
+## Install Node.js
+[link](https://github.com/nodesource/distributions) useing RHEL 8 source.
+## Install Oracle JDK
+    1. Uninstall the origin JDK
+             process=`rpm -qa | grep java`
+              for i in $process
+              do
+                rpm -e --nodeps $i
+              done
+    2. Download the Oracle JDK RPM Package from [link](https://www.oracle.com/ca-en/java/technologies/downloads/)
+    3. sudo rpm -ivh ./jdk*.rpm
+    
+        
+         
            
 
 
