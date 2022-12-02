@@ -31,7 +31,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
               do
                 rpm -e --nodeps $i
               done
-    2. Download the Oracle JDK RPM Package from [link](https://www.oracle.com/ca-en/java/technologies/downloads/)
+    2. Download the Oracle JDK RPM Package from (https://www.oracle.com/ca-en/java/technologies/downloads/)
     3. sudo rpm -ivh ./jdk*.rpm
     3. Add JDK to the PATH (change the java version to yours) sudo gedit /etc/profile
             export JAVA_HOME=/usr/java/jdk-19
@@ -43,7 +43,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
             sudo yum install R or sudo dnf install R
     2. Download Rstudio-Server Daily Builds, because there is not official version for RHEL 9\
     **(Note: The daily build version may have some bug when you use it independtly. Recommand use it with jupyterhub)**
-    Download address: [link](https://dailies.rstudio.com)
+    Download address: (https://dailies.rstudio.com)
     3. sudo yum install sqlite* -y
     4. sudo rpm -ivh ./Rstudio-*.rpm
         
@@ -52,7 +52,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
 ## Install netcdf
     sudo yum install netcdf* -y
 ## Install Julia
-    1. Download Julia from [link](https://julialang.org/downloads/)
+    1. Download Julia from (https://julialang.org/downloads/)
     2. Recommand put Julia to /opt directory
         tar -zvxf ./julia*.gz
         sudo mv ./julia-1.8.3 /opt/julia
@@ -68,10 +68,10 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
         usermod -a -G rvm demo
 ## Install GO
     sudo yum install GO
-    **(Option: you can install go version manager (GVM)[link](https://github.com/moovweb/gvm))
+    **(Option: you can install go version manager (GVM)(https://github.com/moovweb/gvm))
 ## Install Lua & LuaJIT
     sudo yum install lua* luajit*
 ## Install Lisp (SBCL)
-    1. Download SBCL source file from [link](https://sourceforge.net/projects/sbcl/files/sbcl/2.2.11/sbcl-2.2.11-x86-64-linux-binary.tar.bz2/download)
+    1. Download SBCL source file from (https://sourceforge.net/projects/sbcl/files/sbcl/2.2.11/sbcl-2.2.11-x86-64-linux-binary.tar.bz2/download)
     2. tar -xvjf ./sbcl*.bz2
     3. 
