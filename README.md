@@ -47,6 +47,13 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     3. sudo yum install sqlite* -y
     4. sudo rpm -ivh ./Rstudio-*.rpm
         
-
+## Install gcc toolkits
+    sudo yum install gcc-* -y
+## Install netcdf
+    sudo yum install netcdf* -y
+## Install Julia
+    1. Download Julia from [link](https://julialang.org/downloads/)
+    2. Recommand put Julia to /opt directory
+        
 
 
