@@ -74,4 +74,13 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
 ## Install Lisp (SBCL)
     1. Download SBCL source file from (https://sourceforge.net/projects/sbcl/files/sbcl/2.2.11/sbcl-2.2.11-x86-64-linux-binary.tar.bz2/download)
     2. tar -xvjf ./sbcl*.bz2
-    3. 
+    3. cd ./sbcl-2.2.11*-linux
+    4. sudo ./install.sh
+    **(Option install quicklisp)**
+            - https://www.quicklisp.org/beta/
+    sudo gedit /etc/profile
+    export PATH=$PATH:/usr/local/bin
+## Install LaTex (Texlive)
+    sudo yum install texlive* -y
+## 
+
