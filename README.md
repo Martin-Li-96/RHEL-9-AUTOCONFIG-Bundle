@@ -33,10 +33,20 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
               done
     2. Download the Oracle JDK RPM Package from [link](https://www.oracle.com/ca-en/java/technologies/downloads/)
     3. sudo rpm -ivh ./jdk*.rpm
-    
+    3. Add JDK to the PATH (change the java version to yours) sudo gedit /etc/profile
+            export JAVA_HOME=/usr/java/jdk-19
+            export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
+            export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH:$HOMR/bin
+    4. sudo source /etc/profile
+## Install R and Rstudio-Server
+    1. Enable the EPEL for RHEL 9 and then run
+            sudo yum install R or sudo dnf install R
+    2. Download Rstudio-Server Daily Builds, because there is not official version for RHEL 9\
+    **(Note: The daily build version may have some bug when you use it independtly. Recommand use it with jupyterhub)**
+    Download address: [link](https://dailies.rstudio.com/)
+    3. sudo yum install sqlite* -y
+    4. sudo rpm -ivh ./Rstudio-*.rpm
         
-         
-           
 
 
 
