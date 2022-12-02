@@ -4,7 +4,7 @@
     - subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms
     - sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 2. Install DKMS
-    - yum update -y
+    - sudo yum update -y
     - sudo yum install kernel-debug-devel dkms -y   
 3. Download and Install Nvidia driver for RHEL 9 
     1. Choosing correct Product Series and download the driver from [link](https://www.nvidia.com/download/index.aspx)
@@ -43,7 +43,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
             sudo yum install R or sudo dnf install R
     2. Download Rstudio-Server Daily Builds, because there is not official version for RHEL 9\
     **(Note: The daily build version may have some bug when you use it independtly. Recommand use it with jupyterhub)**
-    Download address: [link](https://dailies.rstudio.com/)
+    Download address: [link](https://dailies.rstudio.com)
     3. sudo yum install sqlite* -y
     4. sudo rpm -ivh ./Rstudio-*.rpm
         
@@ -54,6 +54,24 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
 ## Install Julia
     1. Download Julia from [link](https://julialang.org/downloads/)
     2. Recommand put Julia to /opt directory
-        
-
-
+        tar -zvxf ./julia*.gz
+        sudo mv ./julia-1.8.3 /opt/julia
+    3. Add julia to the PATH
+        export PATH=$PATH:/opt/julia/bin
+## Install Octave
+    sudo yum install octave* -y
+## Install RVM for all user    
+    1. Install GPG keys:
+        gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    2. \curl -sSL https://get.rvm.io | sudo bash -s stable
+    3. add the user who want to use rvm to rvm group
+        usermod -a -G rvm demo
+## Install GO
+    sudo yum install GO
+    **(Option: you can install go version manager (GVM)[link](https://github.com/moovweb/gvm))
+## Install Lua & LuaJIT
+    sudo yum install lua* luajit*
+## Install Lisp (SBCL)
+    1. Download SBCL source file from [link](https://sourceforge.net/projects/sbcl/files/sbcl/2.2.11/sbcl-2.2.11-x86-64-linux-binary.tar.bz2/download)
+    2. tar -xvjf ./sbcl*.bz2
+    3. 
