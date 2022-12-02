@@ -19,7 +19,10 @@
 1. Download the CUDA TOOLKITs from [link](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=RHEL&target_version=9)
 2. sudo sh ./cuda*.run\
 **(If you have installed Nvidia Driver, please uncheck the option of install Nvdia Dirver )**
-        
+# Install CUDNN
+Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html)\
+**(Recommand using  Tar File Installation)**
+
            
 
 
