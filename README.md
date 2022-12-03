@@ -185,7 +185,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     15. pip install jupyter-rsession-proxy
     16. pip install jupyter-c-kernel
     17. install_c_kernel
-    18. cp -r /root/.local/share/jupyter/kernels/c /opt/anaconda3/envs/jp/share/jupyter/kernels/c
+    18. cp -r /root/.local/share/jupyter/kernels/c /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/c
     19. conda install octave_kernel -c conda-forge -y
     20. conda install texinfo -y
     21. python -m octave_kernel install\
@@ -194,16 +194,52 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     24. conda install conda -y
     25. pip install ipykernel
     26. conda install xeus-cling -c conda-forge -y
-    27. cp -r /opt/anaconda3/envs/C++/share/jupyter/kernels/xcpp11 /opt/anaconda3/envs/jp/share/jupyter/kernels/xcpp11
-    28. cp -r /opt/anaconda3/envs/C++/share/jupyter/kernels/xcpp14 /opt/anaconda3/envs/jp/share/jupyter/kernels/xcpp14
-    29. cp -r /opt/anaconda3/envs/C++/share/jupyter/kernels/xcpp17 /opt/anaconda3/envs/jp/share/jupyter/kernels/xcpp17
+    27. cp -r /opt/anaconda3/envs/C++/share/jupyter/kernels/xcpp11 /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/xcpp11
+    28. cp -r /opt/anaconda3/envs/C++/share/jupyter/kernels/xcpp14 /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/xcpp14
+    29. cp -r /opt/anaconda3/envs/C++/share/jupyter/kernels/xcpp17 /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/xcpp17
     30. conda create -n fortran -y
     31. conda activate fortran 
     32. conda install conda -y
     33. pip install ipykernel
     34. conda install lfortran -c conda-forge -y
-    35. cp -r /opt/anaconda3/envs/fortran/share/jupyter/kernels/fortran /opt/anaconda3/envs/jp/share/jupyter/kernels/fortran
-
+    35. cp -r /opt/anaconda3/envs/fortran/share/jupyter/kernels/fortran /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/fortran
+    36. conda create -n java -y
+    37. conda activate java
+    38. conda install conda -y 
+    39. pip install ipykernel
+    40. wget -P /opt/ijava_zip https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip
+    41. unzip /opt/ijava_zip/ijava-1.3.0.zip -d /opt/ijava
+    42. python3 /opt/ijava/install.py --sys-prefix
+    43. cp -r /opt/anaconda3/envs/java/share/jupyter/kernels/java /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/java
+    44. conda activate jupyterhub
+    45. npm install uuid@latest
+    46. npm install -g ijavascript
+    47. ijsinstall
+    48. cp -r /root/.local/share/jupyter/kernels/javascript /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/javascript
+    49. conda create -n ssh -y
+    50. conda activate ssh
+    51. conda install conda -y
+    52. pip install ipykernel
+    53. pip install -U sshkernel
+    54. python -m sshkernel install --sys-prefix
+    55. cp -r /opt/anaconda3/envs/ssh/share/jupyter/kernels/ssh /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/ssh
+    56.  R
+    57. install.packages('IRkernel',repos='https://cran.r-project.org')
+    58. IRkernel::installspec()
+    59. IRkernel::installspec(user = FALSE)
+    60. q()
+    61. cp -r /root/.local/share/jupyter/kernels/ir /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/ir
+    62. yum install ruby* zeromq-devel
+    63. gem install iruby
+    64. iruby register --force
+    65. cp -r /root/.local/share/jupyter/kernels/ruby /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/ruby
+    66. conda create -n bash -y
+    67. conda activate bash
+    68. conda install conda -y
+    69. pip install ipykernel
+    70. pip install bash_kernel
+    71. python -m bash_kernel.install
+    72
 
                     
 
