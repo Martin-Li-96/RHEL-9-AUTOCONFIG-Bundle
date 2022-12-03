@@ -152,7 +152,58 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
          # Run postgres by:
             psql -U postgres -W  
             
-      
+## Code-server
+    sudo curl -fsSL https://code-server.dev/install.sh | sh
+## Scala
+    Download: https://github.com/lampepfl/dotty/releases/download/3.2.1/scala3-3.2.1.tar.gz
+    sudo tar -zvxf ./scala*.gz
+    sudo cp -r ./scala*.1 /opt/scala
+    sudo gedit /etc/profile
+    export PATH=$PATH:/opt/scala/bin
+## Kotlin 
+    Download: https://github.com/JetBrains/kotlin/releases/download/v1.7.21/kotlin-native-linux-x86_64-1.7.21.tar.gz
+    sudo tar -zvxf ./kotlin*.gz
+    sudo cp -r ./kotlin*/21 /opt/kotlin
+    sudo gedit /etc/profile
+    export PATH=$PATH:/opt/kotlin/bin
+    
+## Anaconda && Jupyterhub
+    1. Download Anaconda: https://www.anaconda.com/products/distribution
+    2. sudo sh ./A*.sh
+    3. Set install path = /opt/anaconda3
+    4. open a new terminal
+    5. sudo su
+    6. conda update conda -y
+    7. conda create -n jupyterhub --clone base
+    0. conda activate jupyterhub
+    9. pip install jupyterlab jupyterhub
+    10. npm install -g configurable-http-proxy
+    11. pip install ipywidgets
+    12. jupyter labextension install @jupyterlab/hub-extension
+    13. pip install jupyter-server-proxy
+    14. pip install jupyter-vscode-proxy
+    15. pip install jupyter-rsession-proxy
+    16. pip install jupyter-c-kernel
+    17. install_c_kernel
+    18. cp -r /root/.local/share/jupyter/kernels/c /opt/anaconda3/envs/jp/share/jupyter/kernels/c
+    19. conda install octave_kernel -c conda-forge -y
+    20. conda install texinfo -y
+    21. python -m octave_kernel install\
+    22. conda create -n C++ -y
+    23. conda activate C++
+    24. conda install conda -y
+    25. pip install ipykernel
+    26. conda install xeus-cling -c conda-forge -y
+    27. cp -r /opt/anaconda3/envs/C++/share/jupyter/kernels/xcpp11 /opt/anaconda3/envs/jp/share/jupyter/kernels/xcpp11
+    28. cp -r /opt/anaconda3/envs/C++/share/jupyter/kernels/xcpp14 /opt/anaconda3/envs/jp/share/jupyter/kernels/xcpp14
+    29. cp -r /opt/anaconda3/envs/C++/share/jupyter/kernels/xcpp17 /opt/anaconda3/envs/jp/share/jupyter/kernels/xcpp17
+    30. conda create -n fortran -y
+    31. conda activate fortran 
+    32. conda install conda -y
+    33. pip install ipykernel
+    34. conda install lfortran -c conda-forge -y
+    35. cp -r /opt/anaconda3/envs/fortran/share/jupyter/kernels/fortran /opt/anaconda3/envs/jp/share/jupyter/kernels/fortran
+
 
                     
 
