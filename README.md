@@ -238,8 +238,10 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     68. conda install conda -y
     69. pip install ipykernel
     70. pip install bash_kernel
-    71. python -m bash_kernel.install
-    72
+    71. python -m bash_kernel.install    
+    72. User install Ijulia by them selfs: Terminal->julia->]->add IJulia
+    73. 
+    
 
                     
 
