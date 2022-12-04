@@ -244,7 +244,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     76. Other kernel need user install by themselfs: https://github.com/jupyter/jupyter/wiki/jupyter-kernels
     
     ### Tensorflow and Pytorch with GPU
-            conda create -n tensorflow python=3.9 -y
+            conda create -n tensorflow_gpu python=3.9 -y
             conda activate tensorflow
             conda install conda -y
             pip install ipykernel
@@ -255,15 +255,15 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
             conda install numba -y
             conda install matplotlib -y
             pip install sklearn
-            python3 -m ipykernel install --name tensorflow
+            python3 -m ipykernel install --name tensorflow_gpu
             
             
-            conda create -n pytorch -y
+            conda create -n pytorch_gpu -y
             conda activate pytorch 
             conda install conda -y
             pip install ipykernel
-            conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge -y
-            python3 -m ipykernel install --name pytorch
+            conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+            python3 -m ipykernel install --name pytorch_gpu
             conda install pandas -y
             conda install keras -y
             conda install numba -y
@@ -293,66 +293,3 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
         flatpak install flathub net.xm1math.Texmaker
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-                    
-
