@@ -186,7 +186,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     18. cp -r /root/.local/share/jupyter/kernels/c /opt/anaconda3/envs/jupyterhub/share/jupyter/kernels/c
     19. conda install octave_kernel -c conda-forge -y
     20. conda install texinfo -y
-    21. python -m octave_kernel install\
+    21. python -m octave_kernel install
     22. conda create -n C++ -y
     23. conda activate C++
     24. conda install conda -y
