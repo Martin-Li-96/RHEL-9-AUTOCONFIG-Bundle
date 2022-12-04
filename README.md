@@ -242,6 +242,35 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     74. conda activate jupyterhub
     75.conda install -y -c conda-forge ipywidgets beakerx
     76. Other kernel need user install by themselfs: https://github.com/jupyter/jupyter/wiki/jupyter-kernels
+    
+    ### Tensorflow and Pytorch with GPU
+            conda create -n tensorflow python=3.9 -y
+            conda activate tensorflow
+            conda install conda -y
+            pip install ipykernel
+            conda install tensorflow -y
+            conda install tensorflow-gpu -y
+            conda install pandas -y
+            conda install keras -y
+            conda install numba -y
+            conda install matplotlib -y
+            pip install sklearn
+            python3 -m ipykernel install --name tensorflow
+            
+            
+            conda create -n pytorch -y
+            conda activate pytorch 
+            conda install conda -y
+            pip install ipykernel
+            conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge -y
+            python3 -m ipykernel install --name pytorch
+            conda install pandas -y
+            conda install keras -y
+            conda install numba -y
+            conda install matplotlib -y
+            pip install sklearn
+    
+    
 ##  Install TexLive
     Download install-tl.sh:
         - https://tug.org/texlive/acquire-netinstall.html 
