@@ -250,7 +250,14 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     cd ./install-tl-unx/install*
     sudo ./install-tl
     
-    
+## Sublime Text Latex Markdown
+    sudo yum install latex*
+    sudo yum install evince
+    sudo yum install ImageMagick
+    flatpak install flathub net.xm1math.Texmaker
+    Download: https://www.sublimetext.com/
+    install package control
+    install latexTools
     
     
     
