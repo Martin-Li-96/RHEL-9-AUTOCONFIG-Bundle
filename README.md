@@ -86,8 +86,6 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
             - https://www.quicklisp.org/beta/
     sudo gedit /etc/profile
     export PATH=$PATH:/usr/local/bin
-## Install LaTex (Texlive)
-    sudo yum install texlive* -y
 ## Install Spark
     1. Download Apache-Spark (https://spark.apache.org/downloads.html)
     2. tar -zvxf ./spark*.tgz
