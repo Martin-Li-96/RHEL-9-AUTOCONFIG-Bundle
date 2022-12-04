@@ -245,7 +245,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     
     ### Tensorflow and Pytorch with GPU
             conda create -n tensorflow_gpu python=3.9 -y
-            conda activate tensorflow
+            conda activate tensorflow_gpu
             conda install conda -y
             pip install ipykernel
             conda install tensorflow -y
@@ -259,7 +259,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
             
             
             conda create -n pytorch_gpu -y
-            conda activate pytorch 
+            conda activate pytorch_gpu 
             conda install conda -y
             pip install ipykernel
             conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
