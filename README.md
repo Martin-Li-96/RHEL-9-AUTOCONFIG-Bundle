@@ -257,6 +257,8 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     Download: https://www.sublimetext.com/
     install package control
     install latexTools
+    install markdwoneditor
+    install markdownprevier
     
  ## Install Latex Maker
         flatpak install flathub net.xm1math.Texmaker
