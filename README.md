@@ -239,9 +239,8 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     71. python -m bash_kernel.install    
     72. User install Ijulia by them selfs: Terminal->julia->]->add IJulia
     73. Go kernel install by user:  https://github.com/gopherdata/gophernotes
-    74.conda create -y -n beakerx 'python>=3'
-    75.conda install -y -c conda-forge ipywidgets beakerx
-    76. Other kernel need user install by themselfs: https://github.com/jupyter/jupyter/wiki/jupyter-kernels
+    74.conda install -y -c conda-forge ipywidgets beakerx
+    75. Other kernel need user install by themselfs: https://github.com/jupyter/jupyter/wiki/jupyter-kernels
 ##  Install TexLive
     Download install-tl.sh:
         - https://tug.org/texlive/acquire-netinstall.html 
