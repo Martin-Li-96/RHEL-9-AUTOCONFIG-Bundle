@@ -254,12 +254,13 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     sudo yum install latex*
     sudo yum install evince
     sudo yum install ImageMagick
-    flatpak install flathub net.xm1math.Texmaker
     Download: https://www.sublimetext.com/
     install package control
     install latexTools
     
-    
+ ## Install Latex Maker
+        flatpak install flathub net.xm1math.Texmaker
+
     
     
     
