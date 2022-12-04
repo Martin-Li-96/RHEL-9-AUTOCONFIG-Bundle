@@ -161,7 +161,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
 ## Kotlin 
     Download: https://github.com/JetBrains/kotlin/releases/download/v1.7.21/kotlin-native-linux-x86_64-1.7.21.tar.gz
     sudo tar -zvxf ./kotlin*.gz
-    sudo cp -r ./kotlin*/21 /opt/kotlin
+    sudo cp -r ./kotlin*.21 /opt/kotlin
     sudo gedit /etc/profile
     export PATH=$PATH:/opt/kotlin/bin
     
