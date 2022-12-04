@@ -244,6 +244,75 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     74.conda create -y -n beakerx 'python>=3'
     75.conda install -y -c conda-forge ipywidgets beakerx
     76. Other kernel need user install by themselfs: https://github.com/jupyter/jupyter/wiki/jupyter-kernels
+##  Install TexLive
+    Download install-tl.sh:
+        - https://tug.org/texlive/acquire-netinstall.html 
+        - https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    tar -zvxf ./*.gz
+    cd ./install-tl-unx/install*
+    sudo ./install-tl
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
