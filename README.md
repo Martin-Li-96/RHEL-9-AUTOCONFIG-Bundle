@@ -272,24 +272,31 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     
     
 ##  Install TexLive
-    Download install-tl.sh:
-        - https://tug.org/texlive/acquire-netinstall.html 
-        - https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-    tar -zvxf ./*.gz
-    cd ./install-tl-unx/install*
-    sudo ./install-tl
-    
-## Sublime Text Latex Markdown
-
+       
     Uninstall original texlive
         process=`rpm -qa | grep texlive*`
         for i in $process
         do
            rpm -e --nodeps $i
         done
+        
+        
 
 
-    sudo yum install latex*
+
+
+    Download install-tl.sh:
+        - https://tug.org/texlive/acquire-netinstall.html 
+        - https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    tar -zvxf ./*.gz
+    cd ./install-tl-unx/install*
+    sudo ./install-tl
+    sudo ln -s /usr/local/texlive/2022/bin/* /usr/bin/
+    sudo yum install evince
+    suod yum install libsynctex*
+    
+## Sublime Text Latex Markdown
+
     sudo yum install evince
     sudo yum install ImageMagick
     Download: https://www.sublimetext.com/
