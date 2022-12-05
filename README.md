@@ -280,6 +280,15 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
     sudo ./install-tl
     
 ## Sublime Text Latex Markdown
+
+    Uninstall original texlive
+        process=`rpm -qa | grep texlive*`
+        for i in $process
+        do
+           rpm -e --nodeps $i
+        done
+
+
     sudo yum install latex*
     sudo yum install evince
     sudo yum install ImageMagick
