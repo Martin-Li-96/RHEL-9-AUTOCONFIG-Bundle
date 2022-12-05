@@ -268,6 +268,34 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
             conda install numba -y
             conda install matplotlib -y
             pip install sklearn
+            
+            
+            
+            conda create -n pytorch_cpu -y
+            conda activate pytorch_cpu 
+            conda install conda -y
+            pip install ipykernel
+            conda install pytorch torchvision torchaudio cpuonly -c pytorch
+            python3 -m ipykernel install --name pytorch_cpu
+            conda install pandas -y
+            conda install keras -y
+            conda install numba -y
+            conda install matplotlib -y
+            pip install sklearn
+            
+            
+            
+            conda create -n tensorflow_cpu python=3.9 -y
+            conda activate tensorflow_cpu
+            conda install conda -y
+            pip install ipykernel
+            pip install tensorflow_cpu
+            conda install pandas -y
+            conda install keras -y
+            conda install numba -y
+            conda install matplotlib -y
+            pip install sklearn
+            python3 -m ipykernel install --name tensorflow_cpu
     
     
 ##  Install TexLive
