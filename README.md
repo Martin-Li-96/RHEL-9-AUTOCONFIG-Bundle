@@ -248,8 +248,7 @@ Follow the steps in the [link](https://docs.nvidia.com/deeplearning/cudnn/instal
             conda activate tensorflow_gpu
             conda install conda -y
             pip install ipykernel
-            conda install tensorflow -y
-            conda install tensorflow-gpu -y
+            pip install tensorflow_gpu
             conda install pandas -y
             conda install keras -y
             conda install numba -y
